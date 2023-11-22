@@ -304,7 +304,7 @@ document.getElementById("scrollToAbout").onclick = function(event) {
   event.preventDefault()
     var name = document.querySelector("#name").value;
             var selectedOption = document.querySelector("#chooseOption").value;
-                    if (selectedOption === 'Moti Gadhi' && name.toLowerCase() === 'aqsa') {
+                    if (name.toLowerCase() === 'aqsa') {
                 // Navigate to the next page or show the gallery
                 document.getElementsByClassName('gallery-special')[0].style.display = 'flex'; // Show the gallery
                 document.getElementsByClassName('gallery-special')[0].scrollIntoView({
@@ -314,7 +314,7 @@ document.getElementById("scrollToAbout").onclick = function(event) {
 
             } else {
                 
-                alert('Kya yaar, ek aur baar try kr ke dekho'); // Show an alert for invalid input
+                alert('Kya yaar, apna naam bhula gyi tum'); // Show an alert for invalid input
                 document.getElementsByClassName('gallery-special')[0].style.display = 'none'; // Show the gallery
 
             }
